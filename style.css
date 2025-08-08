@@ -20,8 +20,11 @@
         margin-bottom: 1.2rem;
     }
     section h2 {
-        font-size: 1.1rem;
-        margin-bottom: 0.7rem;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .theme-card, .reason-card {
         min-width: 98vw;
@@ -31,7 +34,10 @@
         margin-bottom: 1rem;
     }
     .theme-card h3, .reason-content h3 {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .details-grid {
         grid-template-columns: 1fr;
@@ -58,21 +64,33 @@
 }
 @media (max-width: 600px) {
     .hero-title {
-        font-size: 2.1rem;
-        letter-spacing: 1px;
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .hero-subtitle {
-        font-size: 1.1rem;
-        margin: 0.7rem 0 1.2rem;
+        font-size: 0.95rem;
+        margin: 0.5rem 0 0.8rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     section h2 {
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
+        font-size: 1.1rem;
+        margin-bottom: 0.7rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .theme-card h3,
     .reason-content h3 {
-        font-size: 1.05rem;
-        margin-bottom: 0.4rem;
+        font-size: 0.95rem;
+        margin-bottom: 0.3rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .cta-button {
         font-size: 0.95rem;
