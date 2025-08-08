@@ -616,11 +616,11 @@ section h2 {
     padding: 2.5rem;
     width: 100%;
     max-width: 450px; /* Simulate a page size */
-    aspect-ratio: 1.42 / 1; /* Approximately 125mm x 88mm */
+    min-height: 300px; /* Ensure content fits */
     text-align: center;
     border: 2px solid var(--passport-border);
     position: relative;
-    overflow: hidden;
+    overflow: visible; /* Allow content to be visible */
 }
 
 .passport-page::before {
