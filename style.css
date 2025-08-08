@@ -616,6 +616,7 @@ section h2 {
     padding: 2.5rem;
     width: 100%;
     max-width: 450px; /* Simulate a page size */
+    height: 317px; /* Approximately 1.42:1 aspect ratio for 450px width */
     text-align: center;
     border: 2px solid var(--passport-border);
     position: relative;
