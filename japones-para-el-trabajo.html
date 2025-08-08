@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihongo Nights | Japonés para el Trabajo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Japonés para el Trabajo</h1>
+            <p class="hero-subtitle">Material de estudio para nuestro encuentro</p>
+            <a href="./index.html" class="cta-button">Volver al inicio</a>
+            <a href="https://forms.gle/dN7aM2nJaQjiJjJy7" class="cta-button register-button">¡Inscríbete al evento!</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="quick-vocabulary">
+            <h2>Vocabulario por Nivel</h2>
+            <div class="tabs">
+                <button class="tab-link active" onclick="openVocab(event, 'n5')">N5</button>
+                <button class="tab-link" onclick="openVocab(event, 'n4')">N4</button>
+                <button class="tab-link" onclick="openVocab(event, 'n3')">N3</button>
+                <button class="tab-link" onclick="openVocab(event, 'n2')">N2</button>
+            </div>
+
+            <div id="n5" class="vocab-content active">
+                <div class="vocab-grid">
+                    <div class="vocab-item"><span>🏢</span> Oficina (jimusho)</div>
+                    <div class="vocab-item"><span>🧑‍💼</span> Empleado (kaishain)</div>
+                    <div class="vocab-item"><span>🤝</span> Reunión (kaigi)</div>
+                    <div class="vocab-item"><span>📧</span> Correo electrónico (mēru)</div>
+                    <div class="vocab-item"><span>📞</span> Llamada telefónica (denwa)</div>
+                    <div class="vocab-item"><span>📝</span> Documento (shorui)</div>
+                    <div class="vocab-item"><span>📊</span> Presentación (purezentēshon)</div>
+                    <div class="vocab-item"><span>💼</span> Negocio (bijinesu)</div>
+                    <div class="vocab-item"><span>✅</span> Entendido (wakarimashita)</div>
+                    <div class="vocab-item"><span>🙏</span> Por favor (onegai shimasu)</div>
+                    <div class="vocab-item"><span>😊</span> Gracias (arigatō gozaimasu)</div>
+                    <div class="vocab-item"><span>🙇</span> Disculpe (sumimasen)</div>
+                </div>
+            </div>
+
+            <div id="n4" class="vocab-content">
+                <div class="vocab-grid">
+                    <div class="vocab-item"><span>報告</span> Informe (hōkoku)</div>
+                    <div class="vocab-item"><span>連絡</span> Contacto (renraku)</div>
+                    <div class="vocab-item"><span>相談</span> Consulta (sōdan)</div>
+                    <div class="vocab-item"><span>出張</span> Viaje de negocios (shutchō)</div>
+                    <div class="vocab-item"><span>残業</span> Horas extras (zangyō)</div>
+                    <div class="vocab-item"><span>休憩</span> Descanso (kyūkei)</div>
+                    <div class="vocab-item"><span>締め切り</span> Fecha límite (shimekiri)</div>
+                    <div class="vocab-item"><span>企画</span> Plan (kikaku)</div>
+                </div>
+            </div>
+
+            <div id="n3" class="vocab-content">
+                <div class="vocab-grid">
+                    <div class="vocab-item"><span>承認</span> Aprobación (shōnin)</div>
+                    <div class="vocab-item"><span>提案</span> Propuesta (teian)</div>
+                    <div class="vocab-item"><span>担当</span> Encargado (tantō)</div>
+                    <div class="vocab-item"><span>資料</span> Materiales (shiryō)</div>
+                    <div class="vocab-item"><span>調整</span> Ajuste (chōsei)</div>
+                    <div class="vocab-item"><span>検討</span> Consideración (kentō)</div>
+                    <div class="vocab-item"><span>協力</span> Cooperación (kyōryoku)</div>
+                    <div class="vocab-item"><span>成果</span> Resultado (seika)</div>
+                </div>
+            </div>
+
+            <div id="n2" class="vocab-content">
+                <div class="vocab-item"><span>課題</span> Problema/Tarea (kadai)</div>
+                <div class="vocab-item"><span>改善</span> Mejora (kaizen)</div>
+                <div class="vocab-item"><span>効率</span> Eficiencia (kōritsu)</div>
+                    <div class="vocab-item"><span>戦略</span> Estrategia (senryaku)</div>
+                    <div class="vocab-item"><span>交渉</span> Negociación (kōshō)</div>
+                    <div class="vocab-item"><span>顧客</span> Cliente (kokyaku)</div>
+                    <div class="vocab-item"><span>信頼</span> Confianza (shinrai)</div>
+                    <div class="vocab-item"><span>貢献</span> Contribución (kōken)</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Frases Esenciales para el Trabajo</h2>
+            <p>Aquí tienes frases clave para comunicarte eficazmente en un entorno laboral japonés. ¡Practícalas para nuestro próximo encuentro!</p>
+
+            <div class="phrase-group">
+                <h3>Saludos y Presentaciones</h3>
+                <ul>
+                    <li><input type="checkbox" id="phrase1" name="phrase1"><label for="phrase1"><strong>Buenos días.</strong> - おはようございます (Ohayō gozaimasu)</label></li>
+                    <li><input type="checkbox" id="phrase2" name="phrase2"><label for="phrase2"><strong>Encantado de conocerle.</strong> - はじめまして (Hajimemashite)</label></li>
+                </ul>
+            </div>
+
+            <div class="phrase-group">
+                <h3>En Reuniones</h3>
+                <ul>
+                    <li><input type="checkbox" id="phrase3" name="phrase3"><label for="phrase3"><strong>Gracias por su tiempo hoy.</strong> - 本日はお忙しいところありがとうございます (Honjitsu wa oisogashii tokoro arigatō gozaimasu)</label></li>
+                    <li><input type="checkbox" id="phrase4" name="phrase4"><label for="phrase4"><strong>Tengo una pregunta.</strong> - 質問があります (Shitsumon ga arimasu)</label></li>
+                </ul>
+            </div>
+
+            <div class="phrase-group">
+                <h3>Comunicación Diaria</h3>
+                <ul>
+                    <li><input type="checkbox" id="phrase5" name="phrase5"><label for="phrase5"><strong>Lo siento, llego tarde.</strong> - 遅れてすみません (Okurete sumimasen)</label></li>
+                    <li><input type="checkbox" id="phrase6" name="phrase6"><label for="phrase6"><strong>Por favor, enséñame.</strong> - 教えてください (Oshiete kudasai)</label></li>
+                    <li><input type="checkbox" id="phrase7" name="phrase7"><label for="phrase7"><strong>Lo revisaré.</strong> - 確認します (Kakunin shimasu)</label></li>
+                </ul>
+            </div>
+
+            <div class="etiquette-tip">
+                <h3>¡Consejo Laboral!</h3>
+                <p>En el trabajo, es fundamental la cortesía. Usa <strong>恐れ入ります (Osoreirimasu)</strong> para disculparte o agradecer de forma muy formal, y <strong>お疲れ様です (Otsukaresama desu)</strong> para reconocer el esfuerzo de los demás.</p>
+            </div>
+
+        </section>
+
+        <section id="conversation-starters">
+            <h2>Disparadores de Conversación</h2>
+            <p>Usa estas preguntas para romper el hielo y practicar tu japonés con otros asistentes.</p>
+            <button id="random-starter-button" class="cta-button">Generar Disparador</button>
+            <div id="random-starter-display" class="conversation-card" style="display: none; margin-top: 1.5rem;">
+                <p class="lang-es" id="starter-es"></p>
+                <p class="lang-ja" id="starter-ja"></p>
+                <p class="lang-ro" id="starter-ro"></p>
+            </div>
+        </section>
+
+        <section id="mini-games">
+            <h2>Mini-Juegos Rápidos</h2>
+            <div class="quiz-container">
+                <h3>Quiz Exprés: ¿Cuánto sabes de Japón?</h3>
+                <div class="quiz-question">
+                    <p><strong>1. ¿Qué es un "Kaizen" en el ámbito laboral japonés? (日本の職場で「改善」とは何ですか。)</strong></p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 0)">Un tipo de café</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, true, 0)">Mejora continua</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 0)">Un saludo formal</button>
+                    </div>
+                    <p class="quiz-feedback" id="quiz-result-0"></p>
+                </div>
+                <div class="quiz-question">
+                    <p><strong>2. ¿Qué significa "Hōkoku, Renraku, Sōdan" (ほうれんそう - Hōrensō)? (「報連相」は何を意味しますか。)</strong></p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" onclick="checkAnswer(this, true, 1)">Reportar, Contactar, Consultar</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 1)">Comer, Dormir, Trabajar</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 1)">Leer, Escribir, Hablar</button>
+                    </div>
+                    <p class="quiz-feedback" id="quiz-result-1"></p>
+                </div>
+                <div class="quiz-question">
+                    <p><strong>3. ¿Qué es un "Nomikai"? (「飲み会」とは何ですか。)</strong></p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 2)">Una reunión de trabajo matutina</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, true, 2)">Una fiesta de bebida con compañeros de trabajo</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 2)">Un examen de japonés</button>
+                    </div>
+                    <p class="quiz-feedback" id="quiz-result-2"></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nihongo Nights. Un evento para conectar culturas.</p>
+    </footer>
+
+    <script>
+        function openVocab(evt, vocabName) {
+            var i, vocabcontent, tablinks;
+            vocabcontent = document.getElementsByClassName("vocab-content");
+            for (i = 0; i < vocabcontent.length; i++) {
+                vocabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(vocabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        function checkAnswer(button, isCorrect, questionIndex) {
+            const question = button.parentElement.parentElement;
+            const resultText = document.getElementById(`quiz-result-${questionIndex}`);
+            const options = question.querySelectorAll('.quiz-option');
+
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect'); // Remove previous highlights
+            });
+
+            if (isCorrect) {
+                button.classList.add('correct');
+                resultText.textContent = '¡Correcto!';
+                resultText.style.color = 'green';
+                options.forEach(option => {
+                    option.disabled = true; // Disable all options if correct
+                });
+            } else {
+                button.classList.add('incorrect');
+                resultText.textContent = ''; // Clear result text for incorrect answers
+                // Do not disable options, allow user to try again
+            }
+        }
+
+        const conversationStarters = [
+            {
+                es: "¿Cuál es tu trabajo ideal en Japón?",
+                ja: "日本での理想の仕事は何ですか。",
+                ro: "Nihon de risō no shigoto wa nan desu ka?"
+            },
+            {
+                es: "¿Qué habilidad te gustaría aprender para mejorar en tu carrera?",
+                ja: "キャリアアップのために、どんなスキルを学びたいですか。",
+                ro: "Kyaria appu no tame ni, donna sukiru o manabitai desu ka?"
+            },
+            {
+                es: "Si pudieras tener una reunión con cualquier persona en el mundo, ¿quién sería y por qué?",
+                ja: "もし世界中の誰とでも会議ができるなら、誰としたいですか。どうして？",
+                ro: "Moshi sekaijū no dare to demo kaigi ga dekiru nara, dare to shitai desu ka. Dōshite?"
+            },
+            {
+                es: "¿Cuál es el mayor desafío que has enfrentado en tu vida profesional?",
+                ja: "あなたの仕事人生で一番大きな課題は何でしたか。",
+                ro: "Anata no shigoto jinsei de ichiban ōkina kadai wa nan deshita ka?"
+            },
+            {
+                es: "¿Qué consejo le darías a alguien que recién empieza su carrera?",
+                ja: "キャリアを始めたばかりの人に、どんなアドバイスをしますか。",
+                ro: "Kyaria o hajimeta bakari no hito ni, donna adobaisu o shimasu ka?"
+            },
+            {
+                es: "Si tuvieras que elegir un animal que represente tu ética de trabajo, ¿cuál sería?",
+                ja: "もしあなたの仕事の倫理を表す動物を選ぶとしたら、何ですか。",
+                ro: "Moshi anata no shigoto no rinri o arawasu dōbutsu o erabu to shitara, nan desu ka?"
+            }
+        ];
+
+        const randomStarterButton = document.getElementById('random-starter-button');
+        const randomStarterDisplay = document.getElementById('random-starter-display');
+        const starterEs = document.getElementById('starter-es');
+        const starterJa = document.getElementById('starter-ja');
+        const starterRo = document.getElementById('starter-ro');
+
+        randomStarterButton.addEventListener('click', () => {
+            const randomIndex = Math.floor(Math.random() * conversationStarters.length);
+            const randomStarter = conversationStarters[randomIndex];
+            starterEs.textContent = randomStarter.es;
+            starterJa.textContent = randomStarter.ja;
+            starterRo.textContent = randomStarter.ro;
+            randomStarterDisplay.style.display = 'block';
+        });
+
+    </script>
+
+</body>
+</html>

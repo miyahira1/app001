@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihongo Nights | Salir a Comer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Salir a Comer</h1>
+            <p class="hero-subtitle">Material de estudio para nuestro encuentro</p>
+            <a href="./index.html" class="cta-button">Volver al inicio</a>
+            <a href="https://forms.gle/dN7aM2nJaQjiJjJy7" class="cta-button register-button">¡Inscríbete al evento!</a>
+        </div>
+    </header>
+
+    
+
+    <main>
+        
+        <section id="conversation-starters">
+            <h2>Disparadores de Conversación</h2>
+            <p>Usa estas preguntas para romper el hielo y practicar tu japonés con otros asistentes.</p>
+            <button id="random-starter-button" class="cta-button">Generar Disparador</button>
+            <div id="random-starter-display" class="conversation-card" style="display: none; margin-top: 1.5rem;">
+                <p class="lang-es" id="starter-es"></p>
+                <p class="lang-ja" id="starter-ja"></p>
+                <p class="lang-ro" id="starter-ro"></p>
+            </div>
+        </section>
+
+        <section id="quick-vocabulary">
+            <h2>Vocabulario por Nivel</h2>
+            <div class="tabs">
+                <button class="tab-link active" onclick="openVocab(event, 'n5')">N5</button>
+                <button class="tab-link" onclick="openVocab(event, 'n4')">N4</button>
+                <button class="tab-link" onclick="openVocab(event, 'n3')">N3</button>
+                <button class="tab-link" onclick="openVocab(event, 'n2')">N2</button>
+            </div>
+
+            <div id="n5" class="vocab-content active">
+                <div class="vocab-grid">
+                    <div class="vocab-item"><span>🍽️</span> Restaurante (resutoran)</div>
+                    <div class="vocab-item"><span>📖</span> Menú (menyū)</div>
+                    <div class="vocab-item"><span>💧</span> Agua (omizu)</div>
+                    <div class="vocab-item"><span>🍺</span> Cerveza (bīru)</div>
+                    <div class="vocab-item"><span>🍷</span> Vino (wain)</div>
+                    <div class="vocab-item"><span>🍚</span> Arroz (gohan)</div>
+                    <div class="vocab-item"><span>🍜</span> Ramen (rāmen)</div>
+                    <div class="vocab-item"><span>🍣</span> Sushi (sushi)</div>
+                    <div class="vocab-item"><span>✅</span> Sí (hai)</div>
+                    <div class="vocab-item"><span>❌</span> No (iie)</div>
+                    <div class="vocab-item"><span>🙏</span> Por favor (onegai shimasu)</div>
+                    <div class="vocab-item"><span>😊</span> Gracias (arigatō)</div>
+                </div>
+            </div>
+
+            <div id="n4" class="vocab-content">
+                <div class="vocab-grid">
+                    <div class="vocab-item"><span>🌶️</span> Picante (karai)</div>
+                    <div class="vocab-item"><span>🍬</span> Dulce (amai)</div>
+                    <div class="vocab-item"><span>🧂</span> Salado (shoppai)</div>
+                    <div class="vocab-item"><span>酸っぱい</span> Ácido (suppai)</div>
+                    <div class="vocab-item"><span>苦い</span> Amargo (nigai)</div>
+                    <div class="vocab-item"><span>熱い</span> Caliente (atsui)</div>
+                    <div class="vocab-item"><span>冷たい</span> Frío (tsumetai)</div>
+                    <div class="vocab-item"><span>注文</span> Ordenar (chūmon suru)</div>
+                </div>
+            </div>
+
+            <div id="n3" class="vocab-content">
+                <div class="vocab-grid">
+                    <div class="vocab-item"><span>🧑‍🍳</span> Chef (shefu)</div>
+                    <div class="vocab-item"><span>💁</span> Mesero/a (ueitā/ueitoresu)</div>
+                    <div class="vocab-item"><span>💵</span> Cuenta (okaikei)</div>
+                    <div class="vocab-item"><span>予約</span> Reservación (yoyaku)</div>
+                    <div class="vocab-item"><span>席</span> Asiento (seki)</div>
+                    <div class="vocab-item"><span>禁煙席</span> Asiento de no fumar (kin'en seki)</div>
+                    <div class="vocab-item"><span>喫煙席</span> Asiento de fumar (kitsuen seki)</div>
+                    <div class="vocab-item"><span>個室</span> Habitación privada (koshitsu)</div>
+                </div>
+            </div>
+
+            <div id="n2" class="vocab-content">
+                <div class="vocab-grid">
+                    <div class="vocab-item"><span>アレルギー</span> Alergia (arerugī)</div>
+                    <div class="vocab-item"><span>材料</span> Ingredientes (zairyō)</div>
+                    <div class="vocab-item"><span>調理法</span> Método de cocina (chōri-hō)</div>
+                    <div class="vocab-item"><span>おかわり</span> Repetir (okawari)</div>
+                    <div class="vocab-item"><span>持ち帰り</span> Para llevar (mochikaeri)</div>
+                    <div class="vocab-item"><span>領収書</span> Recibo (ryōshūsho)</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Frases Esenciales para Comer Afuera</h2>
+            <p>Aquí tienes una guía con frases en japonés para que puedas desenvolverte en un restaurante. ¡Practícalas para nuestro próximo encuentro!</p>
+
+            <div class="phrase-group">
+                <h3>Reservaciones</h3>
+                <ul>
+                    <li><input type="checkbox" id="phrase1" name="phrase1"><label for="phrase1"><strong>¿Puedo hacer una reservación?</strong> - 予約をお願いします (Yoyaku o onegai shimasu)</label></li>
+                    <li><input type="checkbox" id="phrase2" name="phrase2"><label for="phrase2"><strong>Para dos personas, por favor.</strong> - 二人です (Futari desu)</label></li>
+                </ul>
+            </div>
+
+            <div class="phrase-group">
+                <h3>Al Llegar</h3>
+                <ul>
+                    <li><input type="checkbox" id="phrase3" name="phrase3"><label for="phrase3"><strong>Tengo una reservación a nombre de [Tu Nombre].</strong> - [Tu Nombre]で予約しています ([Tu Nombre] de yoyaku shiteimasu)</label></li>
+                    <li><input type="checkbox" id="phrase4" name="phrase4"><label for="phrase4"><strong>¿Tienen mesa para dos?</strong> - 二人用の席はありますか (Futari-yō no seki wa arimasu ka)</label></li>
+                </ul>
+            </div>
+
+            <div class="phrase-group">
+                <h3>Al Ordenar</h3>
+                <ul>
+                    <li><input type="checkbox" id="phrase5" name="phrase5"><label for="phrase5"><strong>¿Me puede dar el menú, por favor?</strong> - メニューをください (Menyū o kudasai)</label></li>
+                    <li><input type="checkbox" id="phrase6" name="phrase6"><label for="phrase6"><strong>¿Qué recomienda?</strong> - おすすめは何ですか (Osusume wa nan desu ka)</label></li>
+                    <li><input type="checkbox" id="phrase7" name="phrase7"><label for="phrase7"><strong>Voy a ordenar esto.</strong> - これをお願いします (Kore o onegai shimasu)</label></li>
+                    <li><input type="checkbox" id="phrase8" name="phrase8"><label for="phrase8"><strong>Agua, por favor.</strong> - お水をください (Omizu o kudasai)</label></li>
+                </ul>
+            </div>
+
+            <div class="phrase-group">
+                <h3>Durante la Comida</h3>
+                <ul>
+                    <li><input type="checkbox" id="phrase9" name="phrase9"><label for="phrase9"><strong>¡Está delicioso!</strong> - 美味しいです (Oishii desu)</label></li>
+                    <li><input type="checkbox" id="phrase10" name="phrase10"><label for="phrase10"><strong>Disculpe.</strong> - すみません (Sumimasen)</label></li>
+                </ul>
+            </div>
+
+            <div class="phrase-group">
+                <h3>Al Pagar</h3>
+                <ul>
+                    <li><input type="checkbox" id="phrase11" name="phrase11"><label for="phrase11"><strong>La cuenta, por favor.</strong> - お会計をお願いします (Okaikei o onegai shimasu)</label></li>
+                    <li><input type="checkbox" id="phrase12" name="phrase12"><label for="phrase12"><strong>¿Aceptan tarjeta de crédito?</strong> - クレジットカードは使えますか (Kurejitto kādo wa tsukaemasu ka)</label></li>
+                </ul>
+            </div>
+
+            <div class="etiquette-tip">
+                <h3>¡Buen Provecho!</h3>
+                <p>Antes de comer, es costumbre decir <strong>いただきます (Itadakimasu)</strong>, que es una forma de agradecer por la comida.</p>
+            </div>
+
+        </section>
+
+        <section id="mini-games">
+            <h2>Mini-Juegos Rápidos</h2>
+            <div class="quiz-container">
+                <h3>Quiz Exprés: ¿Cuánto sabes de Japón?</h3>
+                <div class="quiz-question">
+                    <p><strong>1. ¿Cuál es la capital de Japón? (日本の首都はどこですか。)</strong></p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 0)">Kioto (京都)</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, true, 0)">Tokio (東京)</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 0)">Osaka (大阪)</button>
+                    </div>
+                    <p class="quiz-feedback" id="quiz-result-0"></p>
+                </div>
+                <div class="quiz-question">
+                    <p><strong>2. ¿Qué significa "sushi"? (「寿司」の意味は何ですか。)</strong></p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" onclick="checkAnswer(this, true, 1)">Arroz avinagrado (酢飯)</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 1)">Pescado crudo (生の魚)</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 1)">Alga marina (海苔)</button>
+                    </div>
+                    <p class="quiz-feedback" id="quiz-result-1"></p>
+                </div>
+                <div class="quiz-question">
+                    <p><strong>3. ¿Cuál es la moneda de Japón? (日本の通貨は何ですか。)</strong></p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 2)">Yuan (元)</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 2)">Won (ウォン)</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, true, 2)">Yen (円)</button>
+                    </div>
+                    <p class="quiz-feedback" id="quiz-result-2"></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nihongo Nights. Un evento para conectar culturas.</p>
+    </footer>
+
+    <script>
+        function openVocab(evt, vocabName) {
+            var i, vocabcontent, tablinks;
+            vocabcontent = document.getElementsByClassName("vocab-content");
+            for (i = 0; i < vocabcontent.length; i++) {
+                vocabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(vocabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        function checkAnswer(button, isCorrect, questionIndex) {
+            const question = button.parentElement.parentElement;
+            const resultText = document.getElementById(`quiz-result-${questionIndex}`);
+            const options = question.querySelectorAll('.quiz-option');
+
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect'); // Remove previous highlights
+            });
+
+            if (isCorrect) {
+                button.classList.add('correct');
+                resultText.textContent = '¡Correcto!';
+                resultText.style.color = 'green';
+                options.forEach(option => {
+                    option.disabled = true; // Disable all options if correct
+                });
+            } else {
+                button.classList.add('incorrect');
+                resultText.textContent = ''; // Clear result text for incorrect answers
+                // Do not disable options, allow user to try again
+            }
+        }
+
+        const conversationStarters = [
+            {
+                es: "¿Cuál es tu comida japonesa favorita y por qué?",
+                ja: "好きな和食は何ですか。どうして？",
+                ro: "Suki na washoku wa nan desu ka. Dōshite?"
+            },
+            {
+                es: "Si pudieras viajar a cualquier lugar de Japón, ¿a dónde irías?",
+                ja: "もし日本旅行ができるなら、どこに行きたいですか。",
+                ro: "Moshi Nihon ryokō ga dekiru nara, doko ni ikitai desu ka?"
+            },
+            {
+                es: "¿Qué es lo más sorprendente que has aprendido sobre la cultura japonesa?",
+                ja: "日本文化について、一番驚いたことは何ですか。",
+                ro: "Nihon bunka ni tsuite, ichiban odoroita koto wa nan desu ka?"
+            },
+            {
+                es: "¿Cuál es tu anime o película japonesa preferida?",
+                ja: "一番好きなアニメや日本の映画は何ですか。",
+                ro: "Ichiban suki na anime ya Nihon no eiga wa nan desu ka?"
+            },
+            {
+                es: "Si tuvieras que describir tu personalidad con un tipo de sushi, ¿cuál sería?",
+                ja: "もし自分の性格を寿司で例えるなら、何ですか。",
+                ro: "Moshi jibun no seikaku o sushi de tatoeru nara, nani desu ka?"
+            },
+            {
+                es: "¿Qué sabor de helado japonés te gustaría probar? (matcha, sésamo negro, yuzu, etc.)",
+                ja: "どんな日本の変わったアイスを食べてみたいですか。",
+                ro: "Donna Nihon no kawatta aisu o tabete mitai desu ka?"
+            }
+        ];
+
+        const randomStarterButton = document.getElementById('random-starter-button');
+        const randomStarterDisplay = document.getElementById('random-starter-display');
+        const starterEs = document.getElementById('starter-es');
+        const starterJa = document.getElementById('starter-ja');
+        const starterRo = document.getElementById('starter-ro');
+
+        randomStarterButton.addEventListener('click', () => {
+            const randomIndex = Math.floor(Math.random() * conversationStarters.length);
+            const randomStarter = conversationStarters[randomIndex];
+            starterEs.textContent = randomStarter.es;
+            starterJa.textContent = randomStarter.ja;
+            starterRo.textContent = randomStarter.ro;
+            randomStarterDisplay.style.display = 'block';
+        });
+
+        const practiceForm = document.getElementById('practice-form');
+        const practiceList = document.getElementById('practice-list');
+        const emailInput = document.getElementById('email-input');
+        const phraseCheckboxes = document.querySelectorAll('.phrase-group input[type="checkbox"]');
+
+        phraseCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                updatePracticeList();
+            });
+        });
+
+        function updatePracticeList() {
+            practiceList.innerHTML = '';
+            const selectedPhrases = [];
+            phraseCheckboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    const label = checkbox.nextElementSibling.innerHTML;
+                    selectedPhrases.push(label);
+                }
+            });
+
+            if (selectedPhrases.length > 0) {
+                const list = document.createElement('ul');
+                selectedPhrases.forEach(phrase => {
+                    const listItem = document.createElement('li');
+                    listItem.innerHTML = phrase;
+                    list.appendChild(listItem);
+                });
+                practiceList.appendChild(list);
+            }
+        }
+
+    </script>
+
+</body>
+</html>

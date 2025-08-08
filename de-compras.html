@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihongo Nights | De Compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">De Compras</h1>
+            <p class="hero-subtitle">Material de estudio para nuestro encuentro</p>
+            <a href="./index.html" class="cta-button">Volver al inicio</a>
+            <a href="https://forms.gle/dN7aM2nJaQjiJjJy7" class="cta-button register-button">¡Inscríbete al evento!</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="quick-vocabulary">
+            <h2>Vocabulario por Nivel</h2>
+            <div class="tabs">
+                <button class="tab-link active" onclick="openVocab(event, 'n5')">N5</button>
+                <button class="tab-link" onclick="openVocab(event, 'n4')">N4</button>
+                <button class="tab-link" onclick="openVocab(event, 'n3')">N3</button>
+                <button class="tab-link" onclick="openVocab(event, 'n2')">N2</button>
+            </div>
+
+            <div id="n5" class="vocab-content active">
+                <div class="vocab-grid">
+                    <div class="vocab-item"><span>🛍️</span> Tienda (mise)</div>
+                    <div class="vocab-item"><span>💰</span> Dinero (okane)</div>
+                    <div class="vocab-item"><span>💳</span> Tarjeta (kādo)</div>
+                    <div class="vocab-item"><span>🏷️</span> Precio (nedan)</div>
+                    <div class="vocab-item"><span>📏</span> Talla (saizu)</div>
+                    <div class="vocab-item"><span>🌈</span> Color (iro)</div>
+                    <div class="vocab-item"><span>🛒</span> Carrito (kāto)</div>
+                    <div class="vocab-item"><span>🎁</span> Regalo (purezento)</div>
+                    <div class="vocab-item"><span>✅</span> Sí (hai)</div>
+                    <div class="vocab-item"><span>❌</span> No (iie)</div>
+                    <div class="vocab-item"><span>🙏</span> Por favor (onegai shimasu)</div>
+                    <div class="vocab-item"><span>😊</span> Gracias (arigatō)</div>
+                </div>
+            </div>
+
+            <div id="n4" class="vocab-content">
+                <div class="vocab-grid">
+                    <div class="vocab-item"><span>試着室</span> Probador (shichakushitsu)</div>
+                    <div class="vocab-item"><span>割引</span> Descuento (waribiki)</div>
+                    <div class="vocab-item"><span>現金</span> Efectivo (genkin)</div>
+                    <div class="vocab-item"><span>領収書</span> Recibo (ryōshūsho)</div>
+                    <div class="vocab-item"><span>袋</span> Bolsa (fukuro)</div>
+                    <div class="vocab-item"><span>返品</span> Devolución (henpin)</div>
+                    <div class="vocab-item"><span>交換</span> Cambio (kōkan)</div>
+                    <div class="vocab-item"><span>消費税</span> Impuesto al consumo (shōhizei)</div>
+                </div>
+            </div>
+
+            <div id="n3" class="vocab-content">
+                <div class="vocab-grid">
+                    <div class="vocab-item"><span>店員</span> Dependiente (ten'in)</div>
+                    <div class="vocab-item"><span>品切れ</span> Agotado (shinagire)</div>
+                    <div class="vocab-item"><span>お釣り</span> Cambio (otsuri)</div>
+                    <div class="vocab-item"><span>包装</span> Envolver (hōsō)</div>
+                    <div class="vocab-item"><span>配送</span> Envío (haisō)</div>
+                    <div class="vocab-item"><span>免税</span> Libre de impuestos (menzei)</div>
+                    <div class="vocab-item"><span>限定品</span> Edición limitada (genteihin)</div>
+                    <div class="vocab-item"><span>人気</span> Popular (ninki)</div>
+                </div>
+            </div>
+
+            <div id="n2" class="vocab-content">
+                <div class="vocab-item"><span>特売品</span> Oferta especial (tokubaihin)</div>
+                <div class="vocab-item"><span>取り寄せ</span> Pedido especial (toriyose)</div>
+                <div class="vocab-item"><span>在庫</span> Stock (zaiko)</div>
+                    <div class="vocab-item"><span>試供品</span> Muestra gratuita (shikyōhin)</div>
+                    <div class="vocab-item"><span>保証書</span> Garantía (hoshōsho)</div>
+                    <div class="vocab-item"><span>修理</span> Reparación (shūri)</div>
+                    <div class="vocab-item"><span>予約</span> Reserva (yoyaku)</div>
+                    <div class="vocab-item"><span>手作り</span> Hecho a mano (tezukuri)</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Frases Esenciales para Ir de Compras</h2>
+            <p>Aquí tienes frases clave para tus compras en Japón. ¡Practícalas para nuestro próximo encuentro!</p>
+
+            <div class="phrase-group">
+                <h3>En la Tienda</h3>
+                <ul>
+                    <li><input type="checkbox" id="phrase1" name="phrase1"><label for="phrase1"><strong>¿Cuánto cuesta esto?</strong> - これはいくらですか (Kore wa ikura desu ka)</label></li>
+                    <li><input type="checkbox" id="phrase2" name="phrase2"><label for="phrase2"><strong>¿Tiene esto en otra talla/color?</strong> - これの別のサイズ/色はありますか (Kore no betsu no saizu/iro wa arimasu ka)</label></li>
+                </ul>
+            </div>
+
+            <div class="phrase-group">
+                <h3>Al Probarse/Elegir</h3>
+                <ul>
+                    <li><input type="checkbox" id="phrase3" name="phrase3"><label for="phrase3"><strong>¿Puedo probármelo?</strong> - 試着してもいいですか (Shichaku shitemo ii desu ka)</label></li>
+                    <li><input type="checkbox" id="phrase4" name="phrase4"><label for="phrase4"><strong>Me lo llevo.</strong> - これをください (Kore o kudasai)</label></li>
+                </ul>
+            </div>
+
+            <div class="phrase-group">
+                <h3>Al Pagar</h3>
+                <ul>
+                    <li><input type="checkbox" id="phrase5" name="phrase5"><label for="phrase5"><strong>¿Aceptan tarjeta de crédito?</strong> - クレジットカードは使えますか (Kurejitto kādo wa tsukaemasu ka)</label></li>
+                    <li><input type="checkbox" id="phrase6" name="phrase6"><label for="phrase6"><strong>¿Me puede dar una bolsa?</strong> - 袋をください (Fukuro o kudasai)</label></li>
+                </ul>
+            </div>
+
+            <div class="etiquette-tip">
+                <h3>¡Consejo de Compras!</h3>
+                <p>En Japón, es común que te ofrezcan una bolsa o te envuelvan el artículo sin costo adicional. No es necesario pedirlo explícitamente a menos que tengas una preferencia.</p>
+            </div>
+
+        </section>
+
+        <section id="conversation-starters">
+            <h2>Disparadores de Conversación</h2>
+            <p>Usa estas preguntas para romper el hielo y practicar tu japonés con otros asistentes.</p>
+            <button id="random-starter-button" class="cta-button">Generar Disparador</button>
+            <div id="random-starter-display" class="conversation-card" style="display: none; margin-top: 1.5rem;">
+                <p class="lang-es" id="starter-es"></p>
+                <p class="lang-ja" id="starter-ja"></p>
+                <p class="lang-ro" id="starter-ro"></p>
+            </div>
+        </section>
+
+        <section id="mini-games">
+            <h2>Mini-Juegos Rápidos</h2>
+            <div class="quiz-container">
+                <h3>Quiz Exprés: ¿Cuánto sabes de Japón?</h3>
+                <div class="quiz-question">
+                    <p><strong>1. ¿Qué tipo de tienda es un "konbini" en Japón? (日本の「コンビニ」は何の店ですか。)</strong></p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 0)">Tienda de ropa</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, true, 0)">Tienda de conveniencia</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 0)">Restaurante</button>
+                    </div>
+                    <p class="quiz-feedback" id="quiz-result-0"></p>
+                </div>
+                <div class="quiz-question">
+                    <p><strong>2. ¿Qué significa "tax-free" (免税 - menzei) en el contexto de compras en Japón? (日本の買い物で「免税」は何を意味しますか。)</strong></p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" onclick="checkAnswer(this, true, 1)">Libre de impuestos</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 1)">Descuento especial</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 1)">Solo para turistas</button>
+                    </div>
+                    <p class="quiz-feedback" id="quiz-result-1"></p>
+                </div>
+                <div class="quiz-question">
+                    <p><strong>3. ¿Qué es un "depachika"? (「デパ地下」とは何ですか。)</strong></p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 2)">Una tienda de electrónica</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, true, 2)">La sección de comida en el sótano de una tienda departamental</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 2)">Un mercado de pescado</button>
+                    </div>
+                    <p class="quiz-feedback" id="quiz-result-2"></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nihongo Nights. Un evento para conectar culturas.</p>
+    </footer>
+
+    <script>
+        function openVocab(evt, vocabName) {
+            var i, vocabcontent, tablinks;
+            vocabcontent = document.getElementsByClassName("vocab-content");
+            for (i = 0; i < vocabcontent.length; i++) {
+                vocabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(vocabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        function checkAnswer(button, isCorrect, questionIndex) {
+            const question = button.parentElement.parentElement;
+            const resultText = document.getElementById(`quiz-result-${questionIndex}`);
+            const options = question.querySelectorAll('.quiz-option');
+
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect'); // Remove previous highlights
+            });
+
+            if (isCorrect) {
+                button.classList.add('correct');
+                resultText.textContent = '¡Correcto!';
+                resultText.style.color = 'green';
+                options.forEach(option => {
+                    option.disabled = true; // Disable all options if correct
+                });
+            } else {
+                button.classList.add('incorrect');
+                resultText.textContent = ''; // Clear result text for incorrect answers
+                // Do not disable options, allow user to try again
+            }
+        }
+
+        const conversationStarters = [
+            {
+                es: "¿Qué tipo de tienda te gustaría visitar más en Japón?",
+                ja: "日本で一番訪れたいお店は何ですか。",
+                ro: "Nihon de ichiban otozuretai omise wa nan desu ka?"
+            },
+            {
+                es: "Si pudieras comprar cualquier cosa en Japón sin límite de dinero, ¿qué comprarías?",
+                ja: "もしお金の制限なしに日本で何でも買えるとしたら、何を買いますか。",
+                ro: "Moshi okane no seigen nashi ni Nihon de nan demo kaeru to shitara, nani o kaimasu ka?"
+            },
+            {
+                es: "¿Cuál es el souvenir más extraño que has visto o te gustaría comprar?",
+                ja: "今まで見た中で一番変な、または買ってみたいお土産は何ですか。",
+                ro: "Ima made mita naka de ichiban hen na, mata wa katte mitai omiyage wa nan desu ka?"
+            },
+            {
+                es: "¿Prefieres comprar en grandes almacenes o en pequeñas tiendas locales?",
+                ja: "デパートと小さなお店、どちらで買い物をしたいですか。",
+                ro: "Depāto to chiisana omise, dochira de kaimono o shitai desu ka?"
+            },
+            {
+                es: "¿Qué te parece la cultura de las máquinas expendedoras en Japón?",
+                ja: "日本の自動販売機の文化についてどう思いますか。",
+                ro: "Nihon no jidōhanbaiki no bunka ni tsuite dō omoimasu ka?"
+            },
+            {
+                es: "Si pudieras diseñar tu propia tienda en Japón, ¿qué venderías?",
+                ja: "もし日本で自分のお店をデザインできるとしたら、何を売りますか。",
+                ro: "Moshi Nihon de jibun no omise o dezain dekiru to shitara, nani o urimasu ka?"
+            }
+        ];
+
+        const randomStarterButton = document.getElementById('random-starter-button');
+        const randomStarterDisplay = document.getElementById('random-starter-display');
+        const starterEs = document.getElementById('starter-es');
+        const starterJa = document.getElementById('starter-ja');
+        const starterRo = document.getElementById('starter-ro');
+
+        randomStarterButton.addEventListener('click', () => {
+            const randomIndex = Math.floor(Math.random() * conversationStarters.length);
+            const randomStarter = conversationStarters[randomIndex];
+            starterEs.textContent = randomStarter.es;
+            starterJa.textContent = randomStarter.ja;
+            starterRo.textContent = randomStarter.ro;
+            randomStarterDisplay.style.display = 'block';
+        });
+
+    </script>
+
+</body>
+</html>

@@ -5,6 +5,15 @@
     --light-color: #F5F5F5;
     --text-color: #424242;
     --font-family: 'Poppins', sans-serif;
+
+    /* Passport specific colors */
+    --passport-bg: #f0f4f8;
+    --passport-border: #a7c0d8;
+    --passport-header-bg: #3f51b5;
+    --passport-header-text: white;
+    --passport-card-bg: white;
+    --passport-card-border: #e0e0e0;
+    --passport-accent: #FF4081;
 }
 
 body {
@@ -17,7 +26,7 @@ body {
 }
 
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1920x1080.png?text=Sakura+en+Vinergy') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://picsum.photos/seed/sakura/1920/1080') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 6rem 1rem;
@@ -140,6 +149,52 @@ section h2 {
     margin-top: 0;
 }
 
+.themes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.theme-card {
+    background: var(--light-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.theme-card i {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.theme-card h3 {
+    font-size: 1.4rem;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+.material-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.material-link:hover {
+    border-bottom-color: var(--primary-color);
+}
+
 .map-container {
     border-radius: 10px;
     overflow: hidden;
@@ -178,6 +233,547 @@ section h2 {
 
 #rsvp h2 {
     color: white;
+}
+
+#quick-vocabulary {
+    background: var(--light-color);
+}
+
+.tabs {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+.tab-link {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.tab-link:hover {
+    background-color: #ddd;
+}
+
+.tab-link.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.vocab-content {
+    display: none;
+}
+
+.vocab-content.active {
+    display: block;
+}
+
+.vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.vocab-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.vocab-item span {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.phrase-group {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.phrase-group h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.phrase-group ul {
+    list-style: none;
+    padding: 0;
+}
+
+.phrase-group li {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.phrase-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.etiquette-tip {
+    background: var(--light-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    border-left: 5px solid var(--primary-color);
+    text-align: left;
+}
+
+.etiquette-tip h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+#conversation-starters {
+    background: var(--light-color);
+}
+
+.conversation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.conversation-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: left;
+    font-size: 1.1rem;
+    border-left: 5px solid var(--secondary-color);
+}
+
+.conversation-card p {
+    margin: 0 0 0.5rem 0;
+}
+
+.lang-es {
+    font-weight: 600;
+}
+
+.lang-ja {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.lang-ro {
+    font-style: italic;
+    color: #666;
+}
+
+#mini-games {
+    background: var(--light-color);
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.quiz-question {
+    margin-bottom: 1.5rem;
+}
+
+.quiz-options {
+    display: flex;
+    gap: 1rem;
+}
+
+.quiz-option {
+    flex-grow: 1;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-option:hover {
+    background-color: #f0f0f0;
+}
+
+.quiz-option.correct {
+    background-color: #a7e9af;
+    border-color: #6fbf7b;
+}
+
+.quiz-option.incorrect {
+    background-color: #f8baba;
+    border-color: #d9534f;
+}
+
+#quiz-result {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#practice-section {
+    background: var(--light-color);
+}
+
+#practice-form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#practice-list {
+    text-align: left;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+#practice-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+#practice-list li {
+    background: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#email-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-family: var(--font-family);
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.event-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.event-card h3 {
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.event-card p {
+    margin-bottom: 0.5rem;
+}
+
+.event-card .material-link {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.event-card .material-link:hover {
+    background-color: #d8336a;
+}
+
+.register-button {
+    margin-top: 1rem;
+    background-color: var(--secondary-color);
+}
+
+.register-button:hover {
+    background-color: #30429a;
+}
+
+#passport-link-section {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.secondary-button {
+    background-color: #6c757d; /* A different color for secondary action */
+}
+
+.secondary-button:hover {
+    background-color: #5a6268;
+}
+
+#passport-concept {
+    background: var(--light-color);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+#passport-concept h2 {
+    color: var(--dark-color);
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+#passport-concept h4 {
+    margin-top: -1rem; /* Adjust this value as needed */
+    margin-bottom: 1rem;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+#passport-concept ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#passport-concept li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 25px;
+}
+
+#passport-concept li::before {
+    content: '\f00c'; /* FontAwesome check icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#event-themes {
+    background: white;
+    margin-bottom: 2rem;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+#event-themes h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Passport Example Page Styles */
+.passport-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--passport-bg);
+}
+
+.passport-page {
+    background: var(--passport-card-bg);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 450px; /* Simulate a page size */
+    text-align: center;
+    border: 2px solid var(--passport-border);
+    position: relative;
+    overflow: hidden;
+}
+
+.passport-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: var(--passport-header-bg);
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+.passport-page h2 {
+    color: var(--dark-color);
+    margin-bottom: 1.5rem;
+    margin-top: 1rem; /* Adjust for the ::before pseudo-element */
+}
+
+.passport-page h3 {
+    color: var(--secondary-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.passport-cover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/seed/japan-cover/450/600');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 600px;
+}
+
+.passport-cover .hero-title {
+    font-size: 2.8rem;
+    margin-top: 2rem;
+}
+
+.passport-cover .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.passport-cover .qr-code {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--dark-color);
+    border-radius: 5px;
+}
+
+.passport-cover .name-input {
+    background: rgba(255,255,255,0.8);
+    border: none;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    width: 80%;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.gamification-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.gamification-table th, .gamification-table td {
+    border: 1px solid var(--passport-card-border);
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.gamification-table th {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.gamification-table td:last-child {
+    text-align: center;
+    font-size: 1.5rem;
+    color: gold;
+}
+
+.vocab-list ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.vocab-list li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.vocab-list li i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.notes-area {
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid var(--passport-card-border);
+    border-radius: 8px;
+    padding: 1rem;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.friend-checklist ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.friend-checklist li {
+    margin-bottom: 0.5rem;
+}
+
+.friend-checklist input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.passport-back-cover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/seed/japan-back/450/600');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 600px;
+}
+
+.passport-back-cover .cta-button {
+    margin-top: 2rem;
+}
+
+.passport-back-cover .footer-message {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 footer {

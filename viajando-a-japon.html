@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihongo Nights | Viajando a Japón</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Viajando a Japón</h1>
+            <p class="hero-subtitle">Material de estudio para nuestro encuentro</p>
+            <a href="./index.html" class="cta-button">Volver al inicio</a>
+            <a href="https://forms.gle/dN7aM2nJaQjiJjJy7" class="cta-button register-button">¡Inscríbete al evento!</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="conversation-starters">
+            <h2>Disparadores de Conversación</h2>
+            <p>Usa estas preguntas para romper el hielo y practicar tu japonés con otros asistentes.</p>
+            <button id="random-starter-button" class="cta-button">Generar Disparador</button>
+            <div id="random-starter-display" class="conversation-card" style="display: none; margin-top: 1.5rem;">
+                <p class="lang-es" id="starter-es"></p>
+                <p class="lang-ja" id="starter-ja"></p>
+                <p class="lang-ro" id="starter-ro"></p>
+            </div>
+        </section>
+
+        <section id="quick-vocabulary">
+            <h2>Vocabulario por Nivel</h2>
+            <div class="tabs">
+                <button class="tab-link active" onclick="openVocab(event, 'n5')">N5</button>
+                <button class="tab-link" onclick="openVocab(event, 'n4')">N4</button>
+                <button class="tab-link" onclick="openVocab(event, 'n3')">N3</button>
+                <button class="tab-link" onclick="openVocab(event, 'n2')">N2</button>
+            </div>
+
+            <div id="n5" class="vocab-content active">
+                <div class="vocab-grid">
+                    <div class="vocab-item"><span>✈️</span> Aeropuerto (kūkō)</div>
+                    <div class="vocab-item"><span>🏨</span> Hotel (hoteru)</div>
+                    <div class="vocab-item"><span>🚉</span> Estación (eki)</div>
+                    <div class="vocab-item"><span>🎫</span> Boleto (kippu)</div>
+                    <div class="vocab-item"><span>🗺️</span> Mapa (chizu)</div>
+                    <div class="vocab-item"><span>🚏</span> Parada de autobús (basutei)</div>
+                    <div class="vocab-item"><span>🚕</span> Taxi (takushī)</div>
+                    <div class="vocab-item"><span>🚶</span> Caminar (aruku)</div>
+                    <div class="vocab-item"><span>➡️</span> Derecha (migi)</div>
+                    <div class="vocab-item"><span>⬅️</span> Izquierda (hidari)</div>
+                    <div class="vocab-item"><span>⬆️</span> Recto (massugu)</div>
+                    <div class="vocab-item"><span>❓</span> ¿Dónde? (doko)</div>
+                </div>
+            </div>
+
+            <div id="n4" class="vocab-content">
+                <div class="vocab-grid">
+                    <div class="vocab-item"><span>🛂</span> Pasaporte (pasupōto)</div>
+                    <div class="vocab-item"><span>🛄</span> Equipaje (nimotsu)</div>
+                    <div class="vocab-item"><span>💺</span> Asiento (zaseki)</div>
+                    <div class="vocab-item"><span>出口</span> Salida (deguchi)</div>
+                    <div class="vocab-item"><span>入口</span> Entrada (iriguchi)</div>
+                    <div class="vocab-item"><span>両替</span> Cambio de moneda (ryōgae)</div>
+                    <div class="vocab-item"><span>観光</span> Turismo (kankō)</div>
+                    <div class="vocab-item"><span>お土産</span> Souvenir (omiyage)</div>
+                </div>
+            </div>
+
+            <div id="n3" class="vocab-content">
+                <div class="vocab-grid">
+                    <div class="vocab-item"><span>案内所</span> Oficina de información (annaijo)</div>
+                    <div class="vocab-item"><span>搭乗券</span> Tarjeta de embarque (tōjōken)</div>
+                    <div class="vocab-item"><span>手荷物</span> Equipaje de mano (tenimotsu)</div>
+                    <div class="vocab-item"><span>乗り換え</span> Trasbordo (norikae)</div>
+                    <div class="vocab-item"><span>片道</span> Solo ida (katamichi)</div>
+                    <div class="vocab-item"><span>往復</span> Ida y vuelta (ōfuku)</div>
+                    <div class="vocab-item"><span>時刻表</span> Horario (jikokuhyō)</div>
+                    <div class="vocab-item"><span>満席</span> Lleno (manseki)</div>
+                </div>
+            </div>
+
+            <div id="n2" class="vocab-content">
+                <div class="vocab-item"><span>国際線</span> Vuelo internacional (kokusaisen)</div>
+                <div class="vocab-item"><span>国内線</span> Vuelo nacional (kokunaisen)</div>
+                <div class="vocab-item"><span>税関</span> Aduana (zeikan)</div>
+                    <div class="vocab-item"><span>入国審査</span> Inmigración (nyūkoku shinsa)</div>
+                    <div class="vocab-item"><span>出発</span> Salida (shuppatsu)</div>
+                    <div class="vocab-item"><span>到着</span> Llegada (tōchaku)</div>
+                    <div class="vocab-item"><span>手配</span> Arreglos (tehai)</div>
+                    <div class="vocab-item"><span>宿泊</span> Alojamiento (shukuhaku)</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Frases Esenciales para Viajar</h2>
+            <p>Aquí tienes frases clave para moverte por Japón con confianza. ¡Prepárate para tu aventura!</p>
+
+            <div class="phrase-group">
+                <h3>En el Aeropuerto</h3>
+                <ul>
+                    <li><input type="checkbox" id="phrase1" name="phrase1"><label for="phrase1"><strong>¿Dónde está la terminal internacional?</strong> - 国際線ターミナルはどこですか (Kokusaisen tāminaru wa doko desu ka)</label></li>
+                    <li><input type="checkbox" id="phrase2" name="phrase2"><label for="phrase2"><strong>¿Puedo ver su pasaporte?</strong> - パスポートを見せていただけますか (Pasupōto o misete itadakemasu ka)</label></li>
+                </ul>
+            </div>
+
+            <div class="phrase-group">
+                <h3>En el Hotel</h3>
+                <ul>
+                    <li><input type="checkbox" id="phrase3" name="phrase3"><label for="phrase3"><strong>Tengo una reserva.</strong> - 予約があります (Yoyaku ga arimasu)</label></li>
+                    <li><input type="checkbox" id="phrase4" name="phrase4"><label for="phrase4"><strong>¿A qué hora es el check-out?</strong> - チェックアウトは何時ですか (Chekkuauto wa nanji desu ka)</label></li>
+                </ul>
+            </div>
+
+            <div class="phrase-group">
+                <h3>Transporte</h3>
+                <ul>
+                    <li><input type="checkbox" id="phrase5" name="phrase5"><label for="phrase5"><strong>¿Dónde está la estación de tren?</strong> - 電車の駅はどこですか (Densha no eki wa doko desu ka)</label></li>
+                    <li><input type="checkbox" id="phrase6" name="phrase6"><label for="phrase6"><strong>Un boleto a [Destino], por favor.</strong> - [Destino]まで切符を一枚ください ([Destino] made kippu o ichimai kudasai)</label></li>
+                    <li><input type="checkbox" id="phrase7" name="phrase7"><label for="phrase7"><strong>¿Cuánto cuesta?</strong> - いくらですか (Ikura desu ka)</label></li>
+                </ul>
+            </div>
+
+            <div class="phrase-group">
+                <h3>Direcciones</h3>
+                <ul>
+                    <li><input type="checkbox" id="phrase8" name="phrase8"><label for="phrase8"><strong>¿Cómo llego a [Lugar]?</strong> - [Lugar]へはどう行けばいいですか ([Lugar] e wa dō ikeba ii desu ka)</label></li>
+                    <li><input type="checkbox" id="phrase9" name="phrase9"><label for="phrase9"><strong>Está por aquí.</strong> - こちらです (Kochira desu)</label></li>
+                    <li><input type="checkbox" id="phrase10" name="phrase10"><label for="phrase10"><strong>Está lejos/cerca.</strong> - 遠い/近いです (Tōi/Chikai desu)</label></li>
+                </ul>
+            </div>
+
+            <div class="etiquette-tip">
+                <h3>¡Consejo de Viaje!</h3>
+                <p>En Japón, es común usar frases como <strong>すみません (Sumimasen)</strong> para llamar la atención o pedir disculpas, y <strong>ありがとうございます (Arigatō gozaimasu)</strong> para agradecer.</p>
+            </div>
+
+        </section>
+
+        <section id="mini-games">
+            <h2>Mini-Juegos Rápidos</h2>
+            <div class="quiz-container">
+                <h3>Quiz Exprés: ¿Cuánto sabes de Japón?</h3>
+                <div class="quiz-question">
+                    <p><strong>1. ¿Qué famoso tren de alta velocidad opera en Japón? (日本で運行している有名な高速鉄道は何ですか。)</strong></p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 0)">KTX</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, true, 0)">Shinkansen (新幹線)</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 0)">TGV</button>
+                    </div>
+                    <p class="quiz-feedback" id="quiz-result-0"></p>
+                </div>
+                <div class="quiz-question">
+                    <p><strong>2. ¿Cuál es el aeropuerto internacional más grande de Tokio? (東京で一番大きい国際空港はどこですか。)</strong></p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 1)">Aeropuerto de Haneda (羽田空港)</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, true, 1)">Aeropuerto de Narita (成田空港)</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 1)">Aeropuerto de Kansai (関西空港)</button>
+                    </div>
+                    <p class="quiz-feedback" id="quiz-result-1"></p>
+                </div>
+                <div class="quiz-question">
+                    <p><strong>3. ¿Qué tipo de alojamiento tradicional japonés se caracteriza por tatamis y futones? (畳と布団が特徴の日本の伝統的な宿泊施設は何ですか。)</strong></p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 2)">Hotel (ホテル)</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, true, 2)">Ryokan (旅館)</button>
+                        <button class="quiz-option" onclick="checkAnswer(this, false, 2)">Hostal (ホステル)</button>
+                    </div>
+                    <p class="quiz-feedback" id="quiz-result-2"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nihongo Nights. Un evento para conectar culturas.</p>
+    </footer>
+
+    <script>
+        function openVocab(evt, vocabName) {
+            var i, vocabcontent, tablinks;
+            vocabcontent = document.getElementsByClassName("vocab-content");
+            for (i = 0; i < vocabcontent.length; i++) {
+                vocabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(vocabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        function checkAnswer(button, isCorrect, questionIndex) {
+            const question = button.parentElement.parentElement;
+            const resultText = document.getElementById(`quiz-result-${questionIndex}`);
+            const options = question.querySelectorAll('.quiz-option');
+
+            options.forEach(option => {
+                option.classList.remove('correct', 'incorrect'); // Remove previous highlights
+            });
+
+            if (isCorrect) {
+                button.classList.add('correct');
+                resultText.textContent = '¡Correcto!';
+                resultText.style.color = 'green';
+                options.forEach(option => {
+                    option.disabled = true; // Disable all options if correct
+                });
+            } else {
+                button.classList.add('incorrect');
+                resultText.textContent = ''; // Clear result text for incorrect answers
+                // Do not disable options, allow user to try again
+            }
+        }
+
+        const conversationStarters = [
+            {
+                es: "¿Cuál es el lugar de Japón que más te gustaría visitar y por qué?",
+                ja: "日本で一番行きたい場所はどこですか。どうして？",
+                ro: "Nihon de ichiban ikitai basho wa doko desu ka. Dōshite?"
+            },
+            {
+                es: "Si pudieras vivir en una ciudad japonesa, ¿cuál elegirías?",
+                ja: "もし日本の都市に住むなら、どこを選びますか。",
+                ro: "Moshi Nihon no toshi ni sumu nara, doko o erabimasu ka?"
+            },
+            {
+                es: "¿Qué experiencia cultural japonesa te gustaría probar?",
+                ja: "どんな日本の文化体験をしてみたいですか。",
+                ro: "Donna Nihon no bunka taiken o shite mitai desu ka?"
+            },
+            {
+                es: "¿Cuál es tu festival japonés favorito o el que te gustaría asistir?",
+                ja: "一番好きな日本の祭り、または参加したい祭りは何ですか。",
+                ro: "Ichiban suki na Nihon no matsuri, mata wa sanka shitai matsuri wa nan desu ka?"
+            },
+            {
+                es: "Si pudieras traer algo de Japón, ¿qué sería?",
+                ja: "もし日本から何か一つ持って帰れるとしたら、何を持って帰りますか。",
+                ro: "Moshi Nihon kara nanika hitotsu motte kaereru to shitara, nani o motte kaerimasu ka?"
+            },
+            {
+                es: "¿Qué es lo que más te emociona de viajar a Japón?",
+                ja: "日本旅行で一番楽しみにしていることは何ですか。",
+                ro: "Nihon ryokō de ichiban tanoshimi ni shiteiru koto wa nan desu ka?"
+            }
+        ];
+
+        const randomStarterButton = document.getElementById('random-starter-button');
+        const randomStarterDisplay = document.getElementById('random-starter-display');
+        const starterEs = document.getElementById('starter-es');
+        const starterJa = document.getElementById('starter-ja');
+        const starterRo = document.getElementById('starter-ro');
+
+        randomStarterButton.addEventListener('click', () => {
+            const randomIndex = Math.floor(Math.random() * conversationStarters.length);
+            const randomStarter = conversationStarters[randomIndex];
+            starterEs.textContent = randomStarter.es;
+            starterJa.textContent = randomStarter.ja;
+            starterRo.textContent = randomStarter.ro;
+            randomStarterDisplay.style.display = 'block';
+        });
+
+        const practiceForm = document.getElementById('practice-form');
+        const practiceList = document.getElementById('practice-list');
+        const emailInput = document.getElementById('email-input');
+        const phraseCheckboxes = document.querySelectorAll('.phrase-group input[type="checkbox"]');
+
+        phraseCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                updatePracticeList();
+            });
+        });
+
+        function updatePracticeList() {
+            practiceList.innerHTML = '';
+            const selectedPhrases = [];
+            phraseCheckboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    const label = checkbox.nextElementSibling.innerHTML;
+                    selectedPhrases.push(label);
+                }
+            });
+
+            if (selectedPhrases.length > 0) {
+                const list = document.createElement('ul');
+                selectedPhrases.forEach(phrase => {
+                    const listItem = document.createElement('li');
+                    listItem.innerHTML = phrase;
+                    list.appendChild(listItem);
+                });
+                practiceList.appendChild(list);
+            }
+        }
+    </script>
+
+</body>
+</html>
