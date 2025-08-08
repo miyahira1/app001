@@ -621,6 +621,7 @@ section h2 {
     border: 2px solid var(--passport-border);
     position: relative;
     overflow: visible; /* Allow content to be visible */
+    font-size: clamp(0.8rem, 2vw, 1.1rem); /* Dynamic font sizing */
 }
 
 @media (max-width: 768px) {
@@ -646,12 +647,14 @@ section h2 {
     color: var(--dark-color);
     margin-bottom: 1.5rem;
     margin-top: 1rem; /* Adjust for the ::before pseudo-element */
+    font-size: clamp(1.5rem, 4vw, 2.2rem); /* Dynamic font sizing for headings */
 }
 
 .passport-page h3 {
     color: var(--secondary-color);
     margin-top: 2rem;
     margin-bottom: 1rem;
+    font-size: clamp(1.2rem, 3vw, 1.5rem); /* Dynamic font sizing for subheadings */
 }
 
 .passport-cover {
