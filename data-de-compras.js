@@ -23,11 +23,19 @@ const pageData = {
             { emoji: "🛍️", es: "Tienda", ja: "mise" },
             { emoji: "💰", es: "Dinero", ja: "okane" },
             { emoji: "💳", es: "Tarjeta de crédito", ja: "kurejitto kādo" },
-            { emoji: "🏷️", es: "Precio", ja: "nedan" },
+            { emoji: "�️", es: "Precio", ja: "nedan" },
             { emoji: "👕", es: "Ropa", ja: "fuku" },
             { emoji: "👟", es: "Zapatos", ja: "kutsu" },
             { emoji: "📏", es: "Talla", ja: "saizu" },
-            { emoji: "👛", es: "Bolsa", ja: "kaban" }
+            { emoji: "�", es: "Bolsa", ja: "kaban" },
+            { emoji: "🧢", es: "Gorra", ja: "bōshi" },
+            { emoji: "👗", es: "Vestido", ja: "wanpīsu" },
+            { emoji: "👖", es: "Pantalón", ja: "zubon" },
+            { emoji: "🧦", es: "Medias", ja: "kutsushita" },
+            { emoji: "🧥", es: "Abrigo", ja: "kōto" },
+            { emoji: "👚", es: "Blusa", ja: "burausu" },
+            { emoji: "👓", es: "Gafas", ja: "megane" },
+            { emoji: "🛒", es: "Carrito", ja: "kaato" }
         ],
         n4: [
             { emoji: "🍎", es: "Manzana", ja: "ringo" },
@@ -37,19 +45,51 @@ const pageData = {
             { emoji: "🥚", es: "Huevo", ja: "tamago" },
             { emoji: "🥩", es: "Carne", ja: "niku" },
             { emoji: "🐟", es: "Pescado", ja: "sakana" },
-            { emoji: "🥦", es: "Verduras", ja: "yasai" }
+            { emoji: "🥦", es: "Verduras", ja: "yasai" },
+            { emoji: "🍅", es: "Tomate", ja: "tomato" },
+            { emoji: "🥕", es: "Zanahoria", ja: "ninjin" },
+            { emoji: "🍆", es: "Berenjena", ja: "nasu" },
+            { emoji: "🌽", es: "Maíz", ja: "tōmorokoshi" },
+            { emoji: "🥒", es: "Pepino", ja: "kyūri" },
+            { emoji: "🍓", es: "Fresa", ja: "ichigo" },
+            { emoji: "🍐", es: "Pera", ja: "nashi" },
+            { emoji: "🍈", es: "Melón", ja: "meron" }
         ],
         n3: [
             { emoji: "🎁", es: "Regalo", ja: "purezento" },
             { emoji: "📦", es: "Paquete", ja: "pakku" },
             { emoji: "🧾", es: "Recibo", ja: "ryōshūsho" },
-            { emoji: "🔄", es: "Cambio (devolución)", ja: "henpin" }
+            { emoji: "🔄", es: "Cambio (devolución)", ja: "henpin" },
+            { emoji: "🛂", es: "Garantía", ja: "hoshō" },
+            { emoji: "🧮", es: "Calculadora", ja: "keisanki" },
+            { emoji: "📱", es: "Teléfono", ja: "denwa" },
+            { emoji: "💡", es: "Electrónica", ja: "denshi" },
+            { emoji: "📚", es: "Libros", ja: "hon" },
+            { emoji: "🖊️", es: "Bolígrafo", ja: "bōrupen" },
+            { emoji: "🗂️", es: "Archivo", ja: "fōruda" },
+            { emoji: "🧸", es: "Juguete", ja: "omocha" },
+            { emoji: "🖼️", es: "Cuadro", ja: "e" },
+            { emoji: "🧴", es: "Cosmético", ja: "keshohin" },
+            { emoji: "🧻", es: "Papel", ja: "kami" },
+            { emoji: "🧹", es: "Escoba", ja: "hōki" }
         ],
         n2: [
             { emoji: "💎", es: "Joyería", ja: "hōseki" },
             { emoji: "⌚", es: "Reloj", ja: "tokei" },
             { emoji: "📷", es: "Cámara", ja: "kamera" },
-            { emoji: "💻", es: "Computadora", ja: "konpyūta" }
+            { emoji: "💻", es: "Computadora", ja: "konpyūta" },
+            { emoji: "🏦", es: "Banco", ja: "ginkō" },
+            { emoji: "🏨", es: "Hotel", ja: "hoteru" },
+            { emoji: "🚗", es: "Auto", ja: "kuruma" },
+            { emoji: "✈️", es: "Avión", ja: "hikōki" },
+            { emoji: "🚆", es: "Tren", ja: "densha" },
+            { emoji: "🛳️", es: "Barco", ja: "fune" },
+            { emoji: "🗺️", es: "Mapa", ja: "chizu" },
+            { emoji: "🏬", es: "Centro comercial", ja: "shōten-gai" },
+            { emoji: "🏠", es: "Casa", ja: "ie" },
+            { emoji: "🏫", es: "Escuela", ja: "gakkō" },
+            { emoji: "🏥", es: "Hospital", ja: "byōin" },
+            { emoji: "🏯", es: "Castillo", ja: "shiro" }
         ]
     },
     phrases: [
