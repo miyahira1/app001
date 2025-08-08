@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nihongo Nights | Viajando a Japón</title>
+    <title>Nihongo Nights | <span id="page-title-tag"></span></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -13,8 +13,8 @@
 <body>
     <header class="hero">
         <div class="hero-content">
-            <h1 class="hero-title"><span id="js-page-title"></span></h1>
-            <p class="hero-subtitle"><span id="js-page-subtitle"></span></p>
+            <h1 class="hero-title" id="header-page-title"></h1>
+            <p class="hero-subtitle" id="header-page-subtitle"></p>
             <a href="./index.html" class="cta-button">Volver al inicio</a>
             <a href="https://wa.me/5491132479877?text=Hola,%20quiero%20reservar%20mi%20lugar%20en%20Nihongo%20Nights.%20Mi%20nombre%20es%20[Nombre],%20la%20fecha%20de%20la%20reserva%20es%20[Fecha],%20y%20seremos%20[Cantidad]%20personas." class="cta-button register-button">¡Inscríbete al evento!</a>
         </div>
@@ -59,12 +59,12 @@
         </section>
 
         <section>
-            <h2>Frases Esenciales para <span id="js-page-title-phrase">...</span></h2>
-            <p>Aquí tienes una guía con frases en japonés para que puedas desenvolverte en <span id="js-page-title-phrase2">...</span>. ¡Practícalas para nuestro próximo encuentro!</p>
+            <h2 id="phrases-section-title">Frases Esenciales para </h2>
+            <p>Aquí tienes una guía con frases en japonés para que puedas desenvolverte en <span id="phrases-section-subtitle"></span>. ¡Practícalas para nuestro próximo encuentro!</p>
             <div id="phrases-container"></div>
             <div class="etiquette-tip">
-                <h3>¡Consejo de Viaje!</h3>
-                <p>En Japón, es común usar frases como <strong>すみません (Sumimasen)</strong> para llamar la atención o pedir disculpas, y <strong>ありがとうございます (Arigatō gozaimasu)</strong> para agradecer.</p>
+                <h3>¡Buen Provecho!</h3>
+                <p>Antes de comer, es costumbre decir <strong>いただきます (Itadakimasu)</strong>, que es una forma de agradecer por la comida.</p>
             </div>
         </section>
 
@@ -81,7 +81,6 @@
         <p>&copy; 2025 Nihongo Nights. Un evento para conectar culturas.</p>
     </footer>
 
-    <script src="./data-viajando-a-japon.js"></script>
     <script>
         function openVocab(evt, vocabName) {
             var i, vocabcontent, tablinks;
@@ -120,20 +119,17 @@
             }
         }
 
+        // Data will be injected here by each specific page
+        let pageData = {};
+
         document.addEventListener('DOMContentLoaded', function() {
-            // Populate page title and subtitle from pageData
-            if (pageData.pageTitle) {
-                const jsPageTitle = document.getElementById('js-page-title');
-                if (jsPageTitle) jsPageTitle.textContent = pageData.pageTitle;
-                const jsPageTitlePhrase = document.getElementById('js-page-title-phrase');
-                if (jsPageTitlePhrase) jsPageTitlePhrase.textContent = pageData.pageTitle;
-                const jsPageTitlePhrase2 = document.getElementById('js-page-title-phrase2');
-                if (jsPageTitlePhrase2) jsPageTitlePhrase2.textContent = pageData.pageTitle;
-            }
-            if (pageData.pageSubtitle) {
-                const jsPageSubtitle = document.getElementById('js-page-subtitle');
-                if (jsPageSubtitle) jsPageSubtitle.textContent = pageData.pageSubtitle;
-            }
+            // Update header content
+            document.getElementById('header-page-title').textContent = pageData.pageTitle;
+            document.getElementById('header-page-subtitle').textContent = pageData.pageSubtitle;
+            document.getElementById('phrases-section-title').textContent = `Frases Esenciales para ${pageData.pageTitle}`;
+            document.getElementById('page-title-tag').textContent = pageData.pageTitle;
+            document.getElementById('phrases-section-subtitle').textContent = pageData.pageTitle;
+
             // Populate Conversation Starters
             const randomStarterButton = document.getElementById('random-starter-button');
             const randomStarterDisplay = document.getElementById('random-starter-display');
@@ -210,3 +206,4 @@
     </script>
 </body>
 </html>
+
