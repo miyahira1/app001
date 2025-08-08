@@ -623,6 +623,13 @@ section h2 {
     overflow: visible; /* Allow content to be visible */
 }
 
+@media (max-width: 768px) {
+    .passport-page {
+        padding: 1.5rem; /* Reduce padding on smaller screens */
+        max-width: 90%; /* Allow it to take more width on smaller screens */
+    }
+}
+
 .passport-page::before {
     content: '';
     position: absolute;
