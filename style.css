@@ -1,3 +1,61 @@
+@media (max-width: 480px) {
+    body {
+        font-size: 0.97rem;
+    }
+    .hero {
+        padding: 2.2rem 0.5rem;
+        flex-direction: column;
+    }
+    .hero-content {
+        padding: 0.5rem;
+    }
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.7rem;
+        border-radius: 1.2rem;
+    }
+    section {
+        padding: 0.7rem 0.2rem;
+        border-radius: 0.7rem;
+        margin-bottom: 1.2rem;
+    }
+    section h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0.7rem;
+    }
+    .theme-card, .reason-card {
+        min-width: 98vw;
+        max-width: 99vw;
+        padding: 0.7rem 0.2rem;
+        border-radius: 0.7rem;
+        margin-bottom: 1rem;
+    }
+    .theme-card h3, .reason-content h3 {
+        font-size: 0.95rem;
+    }
+    .details-grid {
+        grid-template-columns: 1fr;
+        gap: 0.7rem;
+    }
+    .evento-descripcion span {
+        font-size: 1.1rem !important;
+    }
+    .map-container img {
+        border-radius: 0.5rem;
+    }
+    .calendar-grid {
+        grid-template-columns: 1fr;
+        gap: 0.7rem;
+    }
+    .event-card {
+        padding: 0.7rem 0.2rem;
+        border-radius: 0.7rem;
+    }
+    #ai-chat-japones, .chat-container {
+        padding: 0.7rem 0.2rem !important;
+        max-width: 99vw !important;
+    }
+}
 @media (max-width: 600px) {
     .hero-title {
         font-size: 2.1rem;
