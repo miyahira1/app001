@@ -8,7 +8,7 @@
         margin: 0.7rem 0 1.2rem;
     }
     section h2 {
-        font-size: 1.3rem;
+        font-size: 0.35rem; /* Minimum practical size for mobile */
         margin-bottom: 1rem;
     }
     .theme-card h3,
